@@ -44,10 +44,11 @@ router.post("/login", validateLoginPost(), (req, res, next) => {
       if (user && bcrypt.compareSync(credentials.password, user.password)) {
         //add token to the user, use that token for authorized restricted
         const token = generateToken(user);
-        console.log("token login----->", token);
         res.status(201).json({
           logged_in: `welcome ${user.username}, have a cookie`,
-          token,
+          id: user.id,
+          instructor: user.role_id === 1 ? true : false,
+          token: token,
         });
       } else {
         res

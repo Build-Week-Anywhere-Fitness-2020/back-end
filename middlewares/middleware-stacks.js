@@ -195,7 +195,7 @@ function restrict() {
         }
       });
     } else {
-      res.status(400).json({
+      res.status(401).json({
         message:
           "token invalid, not logged in, enter correct login credentials",
       });
