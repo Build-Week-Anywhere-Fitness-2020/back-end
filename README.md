@@ -113,7 +113,7 @@
     "start_time": "9:00 AM--",
     "duration": 1.8,
     "intensity": "High--",
-    "location": "Seattle--
+    "location": "Seattle--"
     "registered_students": 11,
     "max_students": 22,
 }
