@@ -4,7 +4,7 @@
   "description": "🌟 BUILDWEEK NODE API 12/2020 🌟:",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env DB_ENV=testing jest --watch --verbose --runInBand",
+    "test": "cross-env DB_ENV=testing jest --watch ",
     "server": "nodemon --require dotenv/config index.js",
     "start": "node index.js"
   },
