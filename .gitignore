@@ -1,2 +1,8 @@
 #
 .env
+
+#VSCODE
+.VSCODE
+
+#middlewares
+.middlewares
